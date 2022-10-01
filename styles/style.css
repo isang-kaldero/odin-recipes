@@ -42,7 +42,8 @@ figcaption {
 }
 
 p {
-    margin: 0 20px 10px 20px;
+    margin: 0 20px 15px 20px;
+    line-height: 1.5em;
 }
 
 a {
@@ -51,14 +52,20 @@ a {
     font-size: large;
 }
 
-.clear {
-    clear: both;
+.clear { clear: both; }
+
+.alert { color: red; }
+
+a.go-home {
+    color: #222;
+    font-size: 12px;    
 }
 
 #main {
     margin: 0 auto;    
     width: 600px;  
     position: relative; 
+    padding-bottom: 20px;
     box-shadow: -10px 5px 10px -10px #333, 10px 5px 10px -10px #333;    
 }
 
@@ -105,37 +112,40 @@ ul.recipes li strong {
     padding: 0 0 5px 0;
 }
 
-li.one {
+li.one,
+h1.one {
     background-color: #32a86d;
 }
 
-li.two {
+li.two,
+h1.two {
     background-color: #232c3b;
 }
 
-li.three {
+li.three,
+h1.three {
     background-color: #a86b32;
 }
 
-li.four {
+li.four,
+h1.four {
     background-color: #3c44b5;
 }
 
 /* recipes */
 ul.ingredients {
-    margin: 0 20px 10px 40px;
+    margin: 0 20px 10px 20px;
     line-height: 1.5em;
 }
 
+ul.ingredients li {
+    list-style: none;
+    padding-left: 15px;
+}
+
 ul.ingredients li:before {
-    content: "";
+    content: "»";
     position: absolute;
-    left: 0;
-    top: 6px;
-    height: 5px;
-    width: 5px;
-    border: 1px solid #f9dd94;
-    border-width: 2px 2px 0 0;
-    transform: rotate(45deg);
+    left: 20px;
   }
       
